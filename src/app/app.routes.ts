@@ -1,15 +1,12 @@
 import { Routes } from '@angular/router';
-import {Home} from './componente/home/home';
-
-// import {Organizador} from './model/organizador';
-// import {Artista} from './model/artista';
-
-import {Organizador} from './componente/organizador/organizador';
-import {Artista} from './componente/artista/artista';
+import { LandingPage } from './componente/landing-page/landing-page';
+import { Organizador } from './componente/organizador/organizador';
+import { Artista } from './componente/artista/artista';
+import { SobreNosotros } from './componente/sobre-nosotros/sobre-nosotros';
 
 export const routes: Routes = [
-  {path: '', component: Home, pathMatch: 'full'},
+  {path: '', component: LandingPage, pathMatch: 'full'},
   {path: 'artista', component: Artista},
   {path: 'organizador', component: Organizador},
-
+  {path: 'sobre-nosotros', component: SobreNosotros},
 ];
