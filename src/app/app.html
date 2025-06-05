@@ -1,17 +1,7 @@
-    <header class="navbar">
-      <div class="navbar-content">
-        <h2 class="logo">LiveBeat</h2>
-
-        <nav>
-          | <a [routerLink]="'/'">Home</a> |
-          <a [routerLink]="'/'">Sobre Nosotros</a> |
-          <a [routerLink]="'/'">Ayuda</a> |
-        </nav>
-
-        <div class="buttons">
-          <button class="login">Iniciar Sesión</button>
-          <button class="register">Registrarse</button>
-        </div>
-      </div>
-    </header>
+<h2>Live Beat</h2>
+<nav>
+  <a [routerLink]="'/'">Home</a> |
+  <a [routerLink]="'/artista'">Artista</a> |
+  <a [routerLink]="'/organizador'">Organizador</a> |
+</nav>
   <router-outlet />
